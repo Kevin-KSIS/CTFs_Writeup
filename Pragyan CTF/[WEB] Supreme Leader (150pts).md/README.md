@@ -9,13 +9,13 @@
 [+] URL: <http://139.59.62.216/supreme_leader>
 
 [+] Solution:
- - Như một thói quen, trưóc khi bắt đầu 1 challenge web mình thường mở burpsuite thần thánh lên để tiện debugs.
+ - Như một thói quen, trưóc khi bắt đầu 1 challenge web mình thường mở burp suite thần thánh lên để tiện debugs.
  - Vào trang nhìn thấy toàn màu vàng chói và mặt anh "Ủn" là thấy tức cười :D.
  - Điều đầu tiên mình làm là bắt đầu từ việc đơn giản nhất rồi từ từ nâng độ khó challenge lên để tránh nhận định quá cao độ khó của thách thức.
-  - `Ctrl + U` không thách gì đặc biệt ngoài những đường link không liên quan.
-  - Bước thứ 2 là xem cookie, mình dùng [Cookie manager+](https://addons.mozilla.org/en-gb/firefox/addon/cookies-manager-plus/) trên firefox. Được cái đoạn này: `KimJongUn=TooLateNukesGone` nhưng `Fri 03 Mar 2017 04:28:51 PM UTC` ==> Hết hạn rồi. Điều tiếp theo mình nghĩ tới là làm thế nào để thay đổi thời gian làm cho cookie này có hiệu thực đây? ... Không thể nào! hoặc có thể là mình không biết. :(
+  - `Ctrl + U` không thấy gì đặc biệt ngoài những đường link không liên quan.
+  - Bước thứ 2 là xem cookie, mình dùng [Cookie manager+](https://addons.mozilla.org/en-gb/firefox/addon/cookies-manager-plus/) trên firefox. Được cái đoạn này: `KimJongUn=TooLateNukesGone` nhưng `expires=Fri 03 Mar 2017 04:28:51 PM UTC` ==> Hết hạn rồi. Điều tiếp theo mình nghĩ tới là làm thế nào để thay đổi thời gian làm cho cookie này có hiệu lực đây? ... Không thể nào! hoặc có thể là mình không biết. :(
   - Không biết làm sao hết. Tiến hành bước tiếp theo vậy, xem http header.
-  - Bây giờ mới bắt đầu dùng tới `burpsuite`. Nhận được header response thế này:
+  - Bây giờ mới bắt đầu dùng tới `burp suite`. Nhận được header response thế này:
 
 ```
 HTTP/1.1 200 OK
@@ -30,4 +30,5 @@ Connection: close
 Content-Type: text/html
 ```
 
-  - Có thêm 1 cookie nữa, cookie mã hóa 2 đoạn md5 (mình đoán thế). Mình decrypt md5 trên <md5online.org> ra thế này: `send_nukes`. Âu cơ! submit thôi, nhớ thêm format flag `pragyanctf{send_nukes}`
+  - Có thêm 1 cookie nữa, cookie mã hóa 2 đoạn md5 (mình đoán thế). Tới lúc này mình đi ngủ rồi, lười làm tiếp, sáng mai tiếp tục. hazzz
+ - Mình decrypt md5 trên <md5online.org> ra thế này: `send_nukes`. Âu cơ! submit thôi, nhớ thêm format flag `pragyanctf{send_nukes}`
