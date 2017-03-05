@@ -1,7 +1,10 @@
 > Category: Web
-Challenge: Supreme Leader (150pts)
-Writer: Kevinlpd
-Team: KS.IS
+
+> Challenge: Supreme Leader (150pts)
+
+> Writer: Kevinlpd
+
+> Team: KS.IS
 
 [+] URL: <http://139.59.62.216/supreme_leader>
 
